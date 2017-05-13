@@ -12,11 +12,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login3.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login3.py">
+      <file leaf-file-name="login4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -40,6 +40,7 @@
         <option value="$PROJECT_DIR$/login_test.py" />
         <option value="$PROJECT_DIR$/login2.py" />
         <option value="$PROJECT_DIR$/login3.py" />
+        <option value="$PROJECT_DIR$/login4.py" />
       </list>
     </option>
   </component>
@@ -77,13 +78,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="env" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -97,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in login3.py">
+  <component name="RunManager" selected="Python tests.py.test in login4.py">
     <configuration default="false" name="login_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,7 +147,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in login3.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="py.test in login4.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -141,8 +157,9 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_training" />
+      <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/login3.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/login4.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -226,6 +243,21 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <configuration default="false" name="Unittests in login3.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_training" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/login3.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
     <configuration default="false" name="py.test in python_training" type="tests" factoryName="py.test" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -242,15 +274,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in python_training" />
-      <item index="1" class="java.lang.String" itemvalue="Python.login_test" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in login2.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in login3.py" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in login3.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in python_training" />
+      <item index="2" class="java.lang.String" itemvalue="Python.login_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in login2.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in login4.py" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in login3.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in login4.py" />
         <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in login2.py" />
         <item index="2" class="java.lang.String" itemvalue="Python.login_test" />
       </list>
@@ -270,44 +303,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_login2_py - 2017.05.13 at 19h 07m 56s.xml">
-      <configuration name="Unittests in login2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_login2_py - 2017.05.13 at 19h 44m 23s.xml">
-      <configuration name="Unittests in login2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 11m 00s.xml">
+    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 49m 19s.xml">
       <configuration name="Unittests in login3.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 11m 11s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_login4_py - 2017.05.13 at 22h 06m 12s.xml">
+      <configuration name="py.test in login4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 22m 25s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_login4_py - 2017.05.13 at 22h 07m 21s.xml">
+      <configuration name="py.test in login4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 23m 23s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_login4_py - 2017.05.13 at 22h 08m 01s.xml">
+      <configuration name="py.test in login4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 26m 13s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_login4_py - 2017.05.13 at 22h 08m 39s.xml">
+      <configuration name="py.test in login4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 30m 22s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_login4_py - 2017.05.13 at 22h 10m 53s.xml">
+      <configuration name="py.test in login4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 30m 23s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_login4_py - 2017.05.13 at 22h 11m 36s.xml">
+      <configuration name="py.test in login4.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login3_py - 2017.05.13 at 21h 31m 03s.xml">
-      <configuration name="Unittests in login3.py" configurationId="tests" />
+    <history-entry file="py_test_in_python_training - 2017.05.13 at 21h 40m 54s.xml">
+      <configuration name="py.test in python_training" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_python_training - 2017.05.13 at 21h 42m 42s.xml">
+      <configuration name="py.test in python_training" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_python_training - 2017.05.13 at 21h 47m 28s.xml">
+      <configuration name="py.test in python_training" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32833022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -350,6 +384,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#24#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -364,7 +401,17 @@
     <entry file="file://$PROJECT_DIR$/login3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#24#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
