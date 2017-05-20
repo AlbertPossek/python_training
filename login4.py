@@ -20,46 +20,21 @@ class login4(unittest.TestCase):
         wd = self.wd
         tmp = True
         wd.get("http://localhost:8080/php4dvd/")    #Go to URL
- #       ActionChains(wd).move_to_element(wd.find_element_by_css_selector("html")).perform()
- #       ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.content-wrapper")).perform()
- #       ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.login-box-body")).perform()
- #       ActionChains(wd).move_to_element(wd.find_element_by_id("username")).perform()
         wd.find_element_by_id("username").click()
-  #      wd.find_element_by_id("username").clear()
+        wd.find_element_by_id("username").clear()
         wd.find_element_by_id("username").send_keys("admin")
         wd.find_element_by_id("password").click()
-  #      wd.find_element_by_id("password").clear()
+        wd.find_element_by_id("password").clear()
         wd.find_element_by_id("password").send_keys("admin")
-   #     ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.login-box-body")).perform()
-   #     ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.col-xs-4")).perform()
-   #     ActionChains(wd).move_to_element(wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']")).perform()
-      #  wd.find_element_by_id("password").click()
-      #  wd.find_element_by_id("password").send_keys("\\undefined")
         wd.find_element_by_id("rememberme").click()         #select the checkbox remember me
         if wd.find_element_by_id("rememberme").is_selected():
             print ("Checkbox checked")  # If remember me checked print "Checkbox unchecked"
         else:
             print("Checkbox unchecked") # If remember me not checked print "Checkbox unchecked"
         wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']").click()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("section.content")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_xpath("//div[@id='movie_4']/div[1]/div")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_id("movie_4")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("nav.navbar.navbar-static-top")).perform()
         ActionChains(wd).move_to_element(wd.find_element_by_xpath("//header[@class='main-header']/nav/div[3]/ul/li[1]/a")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("i.fa.fa-home")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_xpath("//header[@class='main-header']/nav/div[3]/ul/li[1]/a")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("a.dropdown-toggle")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("i.fa.fa-wrench")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("a.dropdown-toggle")).perform()
         wd.find_element_by_css_selector("a.dropdown-toggle").click()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("i.fa.fa-wrench")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_link_text("User management")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_link_text("My profile")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_link_text("Log out")).perform()
         wd.find_element_by_link_text("Log out").click()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.content-wrapper")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("footer.main-footer")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.content-wrapper")).perform()
         self.assertTrue(success)
     
     def tearDown(self):
