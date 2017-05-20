@@ -18,22 +18,28 @@ class login4(unittest.TestCase):
     def test_(self):
         success = True
         wd = self.wd
-        wd.get("http://localhost:8080/php4dvd/")
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("html")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.content-wrapper")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.login-box-body")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_id("username")).perform()
+        tmp = True
+        wd.get("http://localhost:8080/php4dvd/")    #Go to URL
+ #       ActionChains(wd).move_to_element(wd.find_element_by_css_selector("html")).perform()
+ #       ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.content-wrapper")).perform()
+ #       ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.login-box-body")).perform()
+ #       ActionChains(wd).move_to_element(wd.find_element_by_id("username")).perform()
         wd.find_element_by_id("username").click()
-        wd.find_element_by_id("username").clear()
+  #      wd.find_element_by_id("username").clear()
         wd.find_element_by_id("username").send_keys("admin")
         wd.find_element_by_id("password").click()
-        wd.find_element_by_id("password").clear()
+  #      wd.find_element_by_id("password").clear()
         wd.find_element_by_id("password").send_keys("admin")
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.login-box-body")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.col-xs-4")).perform()
-        ActionChains(wd).move_to_element(wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']")).perform()
+   #     ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.login-box-body")).perform()
+   #     ActionChains(wd).move_to_element(wd.find_element_by_css_selector("div.col-xs-4")).perform()
+   #     ActionChains(wd).move_to_element(wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']")).perform()
       #  wd.find_element_by_id("password").click()
       #  wd.find_element_by_id("password").send_keys("\\undefined")
+        wd.find_element_by_id("rememberme").click()         #select the checkbox remember me
+        if wd.find_element_by_id("rememberme").is_selected():
+            print ("Checkbox checked")  # If remember me checked print "Checkbox unchecked"
+        else:
+            print("Checkbox unchecked") # If remember me not checked print "Checkbox unchecked"
         wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']").click()
         ActionChains(wd).move_to_element(wd.find_element_by_css_selector("section.content")).perform()
         ActionChains(wd).move_to_element(wd.find_element_by_xpath("//div[@id='movie_4']/div[1]/div")).perform()
