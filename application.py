@@ -1,7 +1,6 @@
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
 
-
 class Application:
     def __init__(self):
         self.wd = WebDriver()
