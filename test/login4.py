@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import pytest
-from film import Film
-from application import Application
+
+from fixture.application import Application
+from model.film import Film
+
 
 @pytest.fixture()
 def app(request):
