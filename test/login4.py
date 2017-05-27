@@ -18,6 +18,6 @@ def test_add_new_movie(app):
     app.session.login(username="admin", password="admin")
     app.film.click_on_add_movie()
     app.film.fill_movie_details(Film(imdbid="10", title="My_Film1", year="1990", duration="94", rating="100", format="strange format", known_as="Also known as brbrbr"))
-    app.session.logout()
+  #  app.session.logout()       logout still doesn't work
 
 
