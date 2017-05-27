@@ -1,3 +1,5 @@
+from selenium.webdriver.common.action_chains import ActionChains
+
 class SessionHelper:
 
     def __init__(self, app):
@@ -19,6 +21,10 @@ class SessionHelper:
             print("Checkbox checked")
         wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']").click()
 
-    def click_on_logout_option(self):
+    def logout(self):
         wd = self.app.wd
+        ActionChains(wd).move_to_element(
+            wd.find_element_by_xpath("//header[@class='main-header']/nav/div[3]/ul/li[1]/a")).perform() # I must chain my action, so no need to do perform after each action
+        wd.find_element_by_css_selector("a.dropdown-toggle").click()
         wd.find_element_by_link_text("Log out").click()
+
