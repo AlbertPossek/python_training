@@ -27,4 +27,5 @@ class SessionHelper:
             wd.find_element_by_xpath("//header[@class='main-header']/nav/div[3]/ul/li[1]/a")).perform() # I must chain my action, so no need to do perform after each action
         wd.find_element_by_css_selector("a.dropdown-toggle").click()
         wd.find_element_by_link_text("Log out").click()
+        wd.switch_to_alert().accept()
 
