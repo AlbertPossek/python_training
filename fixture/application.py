@@ -1,29 +1,16 @@
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
+from fixture.session import SessionHelper
 
 class Application:
     def __init__(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
+        self.session = SessionHelper(self)
 
     def open_home_page(self):
         wd = self.wd
         wd.get("http://localhost:8080/php4dvd/")
-
-    def set_username_password(self, username, password):
-        wd = self.wd
-        wd.find_element_by_id("username").click()
-        wd.find_element_by_id("username").clear()
-        wd.find_element_by_id("username").send_keys(username)
-        wd.find_element_by_id("password").click()
-        wd.find_element_by_id("password").clear()
-        wd.find_element_by_id("password").send_keys(password)
-        # Select checkbox "remember me"
-        wd.find_element_by_id("rememberme").click()  # select the checkbox remember me
-        # Check checkbox "remember me and print "Checkbox checked" in case it checked, or "Checkbox uchecked"  if it unchecked
-        if wd.find_element_by_id("rememberme").is_selected():
-            print("Checkbox checked")
-        wd.find_element_by_xpath("//div[@class='col-xs-4']//button[.='Log in']").click()
 
     def dont_know_what_is_this(self):
         wd = self.wd
@@ -33,10 +20,6 @@ class Application:
     def click_on_settings_icon(self):
         wd = self.wd
         wd.find_element_by_css_selector("a.dropdown-toggle").click()
-
-    def click_on_logout_option(self):
-        wd = self.wd
-        wd.find_element_by_link_text("Log out").click()
 
     def fill_movie_details(self, film):
         wd = self.wd
