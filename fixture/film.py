@@ -1,3 +1,6 @@
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoAlertPresentException
+
 class FilmHelper:
 
     def __init__(self, app):
@@ -31,6 +34,13 @@ class FilmHelper:
         wd.find_element_by_id("loaned_no").click()
         wd.find_element_by_id("submit").click()
 
+
     def click_on_add_movie(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Add movie").click()
+
+    def select_movie(self, film_name):
+        wd = self.app.wd
+        wd.find_element_by_link_text(film_name).click();
+        wd.find_element_by_xpath('//*[@title="Remove"]').click()
+        wd.switch_to_alert().accept()
